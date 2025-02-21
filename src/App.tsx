@@ -5,25 +5,25 @@ export const App = () => {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <ReactLogo className="w-32 h-32 animate-spin-slow mb-6" />
+    <div className="flex min-h-screen flex-col items-center justify-center bg-gray-100">
+      <ReactLogo className="animate-spin-slow mb-6 h-32 w-32" />
       <header className="text-center">
-        <h1 className="text-4xl font-bold text-blue-600 mb-4">
+        <h1 className="mb-4 text-4xl font-bold text-blue-600">
           Welcome to Rsbuild + React
         </h1>
-        <p className="text-gray-700 mb-6">
-          Edit <code className="bg-gray-200 px-1 rounded">App.tsx</code> and
+        <p className="mb-6 text-gray-700">
+          Edit <code className="rounded bg-gray-200 px-1">App.tsx</code> and
           save to reload.
         </p>
-        <div className="card bg-white p-6 rounded-lg shadow-md mb-6">
+        <div className="card mb-6 rounded-lg bg-white p-6 shadow-md">
           <button
-            className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+            className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-600"
             type="button"
             onClick={() => setCount((count) => count + 1)}
           >
             count is {count}
           </button>
-          <p className="text-gray-700 mt-4">
+          <p className="mt-4 text-gray-700">
             Rsbuild is a fast JavaScript and TypeScript bundler for modern web
             development.
           </p>
@@ -31,7 +31,7 @@ export const App = () => {
         <p className="text-gray-500">
           Learn more about Rsbuild by visiting the official documentation.
         </p>
-        <p className="text-blue-500 mt-4">
+        <p className="mt-4 text-blue-500">
           Click the button above to start exploring Rsbuild with React.
         </p>
       </header>
